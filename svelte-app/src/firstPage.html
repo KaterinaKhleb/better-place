@@ -1,0 +1,71 @@
+<div id="main">
+    <div class="nav">
+        <a href="#paper">Paper</a>
+        <a href="#glass">Glass</a>
+        <a href="#cardboard">Cardboard</a>
+        <a href="#metal">Metal</a>
+        <a href="#energy">Energy</a>
+        <a href="#bio">Bio</a>
+        <a href="#compustible">Combustible</a>
+        <a href="#hazardous">Hazardous</a>
+    </div>
+   
+    <div class="question">
+            <span>WOULD YOU LIKE <br> <small>TO MAKE YOUR HOME</small>  <br> A BETTER PLACE?</span>
+            <div ><span class="smallText">just by separating waste</span></div>
+
+    </div>
+
+</div>
+
+<script>
+	export default {
+		oncreate() {
+			console.log("HI");
+		}
+	};
+</script>
+
+<style>
+#main{
+    background-image: url("/images/back1_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.nav {
+    text-align: center;
+    display: block;
+    margin:auto;
+    padding-top: 20px;
+}
+a {
+    color: whitesmoke;
+    margin: 20px;
+    padding: 3px;
+    opacity: 0.5;
+    transition:  opacity 0.3s
+}
+a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid;
+    opacity: 1;
+}
+.question{
+text-align: center;
+margin-top: 30vh;
+}
+span {
+    color: whitesmoke;
+    font-size: 80px;
+
+}
+.smallText{
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    border-bottom: 1px solid;
+}
+
+</style>
