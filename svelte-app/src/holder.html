@@ -1,0 +1,62 @@
+{#if waste}
+<div id="mainHolder">
+	<div class="flex">
+        {#each waste as item}
+        <Item bind:item=item />
+        {:else}
+            <h>No items :(</h>
+        {/each}
+
+    </div>
+</div>
+
+{/if}
+	<script>
+        import Item from "./item.html"
+
+
+	export default {
+		components: { Item },
+        
+			oncreate() {
+                fetch("/assets/waste.json")
+                    .then(res => res.json())
+                    .then(async data => {
+                    console.log(data)
+                    this.set({waste: data.waste})
+                    });
+                    }
+	};
+	</script>
+
+	<style>
+	#mainHolder{
+	background-color: #ECECEC;
+	 /* height: 100%; */
+     width: 100%;
+	}
+    .flex {
+        margin:auto;
+    width:86vw;
+    display: flex;
+    flex-wrap:wrap;
+    padding-top:5%;
+    
+    }
+    .item{
+    flex-basis: 25%;
+    height:40vh;
+
+    }
+    .inner{
+        width: 98%;
+        height:98%;
+        background: red;
+        margin: 1px;
+    border: 1px black
+
+    }
+
+
+
+	</style>

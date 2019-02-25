@@ -1,0 +1,79 @@
+{"waste":[
+     {
+    "title": "Paper",
+    "yes": ["newspaper", "brochures", "paperback books", "printouts", "notepads", "white paper bags", "envelopes"],
+    "no": ["wet paper", "paperboard", "cardboard", "brown paper bags", "wrapping paper", "aluminium or wax paper"],
+    "icon": "/images/paper.svg",
+    "style": "light"
+    
+},
+{
+    "title": "Glass",
+    "yes": ["glass bottles", "jars"],
+    "no": ["porcelain", "window glass", "mirror glass", "heat-resistant glass", "opalescent glass", "light bulbs", "crystal"],
+    "icon": "/images/glass.svg",
+    "style": "dark"
+},
+{
+    "title": "Cardboard",
+    "yes": ["cardboard packaging", "pizza boxes", "plastic-coated wrappings", "all paper bags", "corrugated boxes"],
+    "no": ["unrinsed packaging", "plastic bags and boxes", "expanded polysterene"],
+    "icon":"/images/cardboard.svg",
+    "style": "light"
+    
+}, 
+{
+    "title": "Metal",
+    "yes": ["tins and food bins", "aluminium dishes", "foil", "metal cups", "empty paint cans", "empty aerosol bottles"],
+    "no": ["wet and dirty beverage bins", "batteries"],
+    "icon":"/images/metal.svg",
+    "style": "dark"
+    
+},
+{
+    "title": "Bio",
+    "yes": ["leftover food", "peels and bones", "solid fat", "coffe, tea", "napkins", "wilted flowers", "wood-based pet litter"],
+    "no": ["liquid fats", "hygien products", "liquid cartons", "medicine", "cat or dog dropping", "chewing gum, cigaretts"],
+    "icon": "/images/bio.svg",
+    "style": "light"
+    
+},
+{
+    "title": "Energy",
+    "yes": ["plastic packaging", "wrappings",
+         "cardboard plates",  "photographs", "CDs and DVDs",
+        "textiles", "paper and wood"],
+    "no": ["PVC with code 03", "leather and shoes", "hygyiene products", "plastic folders", "foil-lined packaging",
+    "ink cartridges", "construction waste"],
+    "icon": "/images/energy.svg",
+    "style": "dark"
+    
+},
+{
+    "title": "Mixed",
+    "yes": ["hygyien products", "leather and rubber", "light bulbs", "PVC plastic products",
+         "igarette ends", "aluminium-coated plastic"],
+    "no": ["any waste that can be specified under particular category"],
+    "icon":"/images/mixed.svg",
+    "style": "light"
+    
+},
+{
+    "title": "Hazardous",
+    "yes": ["Energy-saving bulbs", "mercury thermometer", "oil waste", "batteries", "glue, varnish",
+     "pesticides", "strong acids" ],
+    "no": ["any waste that can be specified under particular category"],
+    "icon":"/images/hazard.svg",
+    "style": "dark"
+    
+},
+{
+    "title": "Electrical",
+    "yes": ["home appliances", "IT equipment", "electrical toys", "cameras", "fluorescent tubes",
+     "sensors" ],
+    "no": ["electric wires", "cables", "combustion engines", "halogen bulbs"],
+    "icon":"/images/plug.svg",
+    "style": "light"
+    
+}
+]}
