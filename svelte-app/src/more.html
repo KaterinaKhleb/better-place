@@ -1,0 +1,140 @@
+<div class="shadow">
+    <div class="model">
+        <div class="picture">
+            
+        </div>
+        <div class="rightPart">
+            <div class="title">
+                <span>{details.title}  waste</span>
+                <img class="closeIcon" on:click="set({more:false})" src="/images/close.png" alt="close">
+            </div>
+            <div class="description">
+                {details.description}
+            </div>
+            <div class="rules">
+                <h3 > {details.title} waste requires considering the following rules:</h3>
+                {#each details.rules as rule}
+                
+                <div class="rule">{rule}   </div> 
+             
+                {:else}
+                    <h>connection error :(</h>
+                {/each}
+            </div>
+            <div class="bottom">
+                <button on:click="set({more:false})"> GOT IT</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+	<script>
+
+	export default {
+       
+        data() {
+			return {
+				
+			};
+        },
+		
+	};
+	</script>
+
+	<style>
+.model {
+    position: fixed;
+    margin: auto auto;
+    background: whitesmoke;
+    margin-top: 10vh;
+    margin-left: 20vw;
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+}
+.shadow{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 98vw;
+    height: 98vh;
+    background-color: rgb(0, 0, 0, 0.7)
+   
+}
+.picture{
+    width: 35%;
+    height: 100%;
+    float: left;
+    background-image: url("/images/tree_dark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+.rightPart{
+    width: 65%;
+    display: flex;
+    flex-direction: column
+}
+.title{
+    width: 60%;
+    color:#2c3033;
+    text-align: center;
+    padding: 15px 0;
+    margin: 10px auto;
+    border-bottom: 1.5px solid #2c3033
+    
+}
+.description {
+    font-size: 14px;
+    margin: 30px 30px 10px 30px;
+    color:#2c3033;
+    text-align:justify
+}
+.rules{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 30px
+}
+.rule {
+    padding: 4px 8px;
+    margin: 8px;
+    border-left: 1.5px #2c3033 solid;
+    transition: all 0.2s ease-in-out
+}
+.rule:hover {
+    cursor: pointer;
+border: 1.5px #2c3033 solid;
+transform: scale(1.03)
+}
+span{
+font-weight: 600;
+font-size: 24px
+}
+
+.closeIcon{
+    position: absolute;
+    width:25px;
+    top:5px;
+    right:5px;
+    height: auto;
+}
+button {
+    padding: 8px 20px;
+    color: #2c3033;
+    border: 1.5px solid #2c3033;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 3%;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    background: #2c3033;
+    color: whitesmoke;
+    opacity: 0.9;
+}
+.bottom {
+    margin-top: auto;
+}
+
+	</style>

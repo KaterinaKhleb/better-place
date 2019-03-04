@@ -1,18 +1,20 @@
 <div id="main">
     <div class="nav">
-        <a href="#paper">Paper</a>
-        <a href="#glass">Glass</a>
-        <a href="#cardboard">Cardboard</a>
-        <a href="#metal">Metal</a>
-        <a href="#energy">Energy</a>
-        <a href="#bio">Bio</a>
-        <a href="#compustible">Combustible</a>
-        <a href="#hazardous">Hazardous</a>
+        <a href="#mainHolder" on:click="openme('Paper')">Paper</a>
+        <a href="#mainHolder" on:click="openme('Glass')">Glass</a>
+        <a href="#mainHolder" on:click="openme('Cardboard')">Cardboard</a>
+        <a href="#mainHolder" on:click="openme('Metal')">Metal</a>
+        <a href="#mainHolder" on:click="openme('Energy')">Energy</a>
+        <a href="#mainHolder" on:click="openme('Bio')">Bio</a>
+        <a href="#mainHolder" on:click="openme('Mixed')">Mixed</a>
+        <a href="#mainHolder" on:click="openme('Hazardous')">Hazardous</a>
+        <a href="#mainHolder" on:click="openme('Electrical')">Electrical</a>
+        
     </div>
    
     <div class="question">
             <span>WOULD YOU LIKE <br> <small>TO MAKE YOUR HOME</small>  <br> A BETTER PLACE?</span>
-            <div ><span class="smallText" href="#whyImportant">just by separating waste</span></div>
+            <div ><a class="smallText" href="#mainWhy">just by separating waste</a></div>
 
     </div>
 
@@ -20,9 +22,50 @@
 
 <script>
 	export default {
-		oncreate() {
-			console.log("HI");
-		}
+        methods: {
+			openme(item) {
+                this.set({more:true})
+                switch (item) {
+                    case 'Paper':
+                    this.set({details: this.get().waste[0]});
+                    break;
+                    case 'Glass':
+                    this.set({details: this.get().waste[1]});
+                    break;
+                    case 'Cardboard':
+                    this.set({details: this.get().waste[2]});
+                    break;
+                    case 'Metal':
+                    this.set({details: this.get().waste[3]});
+                    break;
+                    case 'Energy':
+                    this.set({details: this.get().waste[5]});
+                    break;
+                    case 'Bio':
+                    this.set({details: this.get().waste[4]});
+                    break;
+                    case 'Mixed':
+                    this.set({details: this.get().waste[6]});
+                    break;
+                    case 'Hazardous':
+                    this.set({details: this.get().waste[7]});
+                    break;
+                    case 'Electrical':
+                    this.set({details: this.get().waste[8]});
+                    break;
+                }
+
+                 
+            }
+        },
+             oncreate() {
+                fetch("/assets/waste.json")
+                    .then(res => res.json())
+                    .then(async data => {
+                    console.log(data)
+                    this.set({waste: data.waste})
+                    });
+                    },
 	};
 </script>
 
@@ -65,6 +108,7 @@ span {
     color: whitesmoke;
     font-size: 22px;
     font-style: italic;
+    opacity: 0.9;
     border-bottom: 1px solid whitesmoke;
 }
 

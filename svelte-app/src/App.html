@@ -1,14 +1,17 @@
 
-<FirstPage/>
+<FirstPage bind:more=more bind:details=details/>
 <Why/>
-<Holder/>
+<Holder bind:more=more bind:details=details/>
+<Last/>
 
 <script>
 import FirstPage from "./firstPage.html"
 import Why from "./why.html"
 import Holder from "./holder.html"
+import Last from "./last.html"
 export default {
-		components: { Why, FirstPage, Holder }
+		components: { Why, FirstPage, Holder, Last },
+	
 	};
 
 

@@ -2,21 +2,26 @@
 <div id="mainHolder">
 	<div class="flex">
         {#each waste as item}
-        <Item bind:item=item />
+        
+            <Item bind:item=item bind:more=more bind:details=details />     
+     
         {:else}
-            <h>No items :(</h>
+            <h>connection error :(</h>
         {/each}
 
     </div>
 </div>
-
+{#if more && details}
+<More bind:more=more bind:details=details/>
 {/if}
+{/if}
+
 	<script>
         import Item from "./item.html"
-
+        import More from "./more.html"
 
 	export default {
-		components: { Item },
+		components: { Item, More },
         
 			oncreate() {
                 fetch("/assets/waste.json")
@@ -25,7 +30,15 @@
                     console.log(data)
                     this.set({waste: data.waste})
                     });
-                    }
+                    },
+            data() {
+			return {
+                more: false,
+              
+			};
+        },
+       
+	
 	};
 	</script>
 
@@ -41,21 +54,10 @@
     display: flex;
     flex-wrap:wrap;
     padding-top:5%;
+    padding-bottom: 3%
     
     }
-    .item{
-    flex-basis: 25%;
-    height:40vh;
 
-    }
-    .inner{
-        width: 98%;
-        height:98%;
-        background: red;
-        margin: 1px;
-    border: 1px black
-
-    }
 
 
 

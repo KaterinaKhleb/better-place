@@ -1,5 +1,5 @@
 
-        <div class="item {item.style}">
+        <div class="item {item.style}" on:click="open()" >
                 <div class="inner">
                     <div class="header">
                         <img class="icon" src={item.icon} alt="icon">
@@ -31,7 +31,14 @@
 
 	<script>
 	export default {
-		
+        methods: {
+			open() {
+                this.set({more:true})
+                 this.set({details:this.get().item})
+                console.log(this.get().details)
+                 
+            }
+        }
 	};
 	</script>
 
@@ -91,7 +98,7 @@
         margin-left: 30%
     }
     .text {
-  color: white;
+  color:  whitesmoke ;
   font-size: 50px;
   position: absolute;
   top: 50%;
@@ -101,7 +108,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   padding-bottom: 15px;
-  border-bottom: 1px solid white
+  border-bottom: 1px solid whitesmoke
 }
     .overlay {
   position: absolute;

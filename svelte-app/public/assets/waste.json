@@ -4,39 +4,42 @@
     "yes": ["newspaper", "brochures", "paperback books", "printouts", "notepads", "white paper bags", "envelopes"],
     "no": ["wet paper", "paperboard", "cardboard", "brown paper bags", "wrapping paper", "aluminium or wax paper"],
     "icon": "/images/paper.svg",
-    "style": "light"
+    "description": "Almost any paper that is posted through the letter slot can be put in the paper recycling bin. You can take the waste paper to the bin in a white paper bag. Paper waste will be sorted in groups to be processed in an appropriate way. For example, ink will be washed off newspapers. Recycled paper is used in various ways, for example as a raw material for print paper, core and packaging cardboard as well as for toilet paper, kitchen roll and tissues.",
+    "rules": ["Paper waste cannot be wet ot dirty", "You don't need to remove staples ", "Do not tie the papers together with string or tape", "Carton packaging is not considered as paper"]
     
 },
+   
 {
     "title": "Glass",
     "yes": ["glass bottles", "jars"],
     "no": ["porcelain", "window glass", "mirror glass", "heat-resistant glass", "opalescent glass", "light bulbs", "crystal"],
     "icon": "/images/glass.svg",
-    "style": "dark"
+    "description": "Glass waste can also be called recyclable glass. Please check the instructions on the recycling bin. If the recycling facility has separate bins for coloured and clear glass, sort your glass accordingly. Colour sorted glass can be used for example for producing glass packaging and glass wool. Additionally, crushed glass can be used as a construction material.",
+    "rules": ["Glass jars must be rinsed before thrown away", "Lids and caps must be removed from bottles and jars", "Labels and cap rings do not need to be removed", "heat-resistant glass is not considered recycable in some cities", "glass bottles bought in Finland, can be returned to the supermarkets"]
 },
 {
     "title": "Cardboard",
     "yes": ["cardboard packaging", "pizza boxes", "plastic-coated wrappings", "all paper bags", "corrugated boxes"],
     "no": ["unrinsed packaging", "plastic bags and boxes", "expanded polysterene"],
     "icon":"/images/cardboard.svg",
-    "style": "light"
-    
+    "description": "Cardboard can also be called recyclable cardboard. Recycled cardboard is reused as a raw material at cardboard factories. It is used, among other things, as a raw material for coreboard. Plastic parts are gasified and reused as energy. Aluminium is processed for reuse.",
+    "rules": ["Soiled packaging needs to be rinsed and dried before recycling.", "Packaging should also be flattened and nested inside each other tor space saving", "Cardboard boxes should be dismantled and folded flat."]
 }, 
 {
     "title": "Metal",
     "yes": ["tins and food bins", "aluminium dishes", "foil", "metal cups", "empty paint cans", "empty aerosol bottles"],
     "no": ["wet and dirty beverage bins", "batteries"],
     "icon":"/images/metal.svg",
-    "style": "dark"
-    
+    "description": "Metal waste can also be called recycled metal or scrap metal. Metal waste bins are not for problem waste like batteries or paint tins, or for electrical or electronic waste, such as televisions, computer screens, or washing machines. Metal waste is processed at a processing plant and converted for industrial purposes. It can end up as recycled steel, stainless steel or aluminium alloy.",
+    "rules":["Metal bins should be rinsed and dry before recycling", "Metal waste cannot contain batteries, home electronics or any chemical compounds", "Labels should be removed where possible"]
 },
 {
     "title": "Bio",
     "yes": ["leftover food", "peels and bones", "solid fat", "coffe, tea", "napkins", "wilted flowers", "wood-based pet litter"],
     "no": ["liquid fats", "hygien products", "liquid cartons", "medicine", "cat or dog dropping", "chewing gum, cigaretts"],
     "icon": "/images/bio.svg",
-    "style": "light"
-    
+    "description": "Biodegradable waste undergoes microbial degradation at a processing plant. The gases released by degradation are used for example as electricity, heat, in the natural gas network or as vehicle fuel. The resultant compost can be used as a fertiliser.",
+    "rules": ["Biodegradable waste must be packed in materials that are also biodegradable", "Bio waste does not include pet waste or normal or mineral-based cat litter", "Do not put here any hazardous waste and chemical compounds"]
 },
 {
     "title": "Energy",
@@ -46,8 +49,8 @@
     "no": ["PVC with code 03", "leather and shoes", "hygyiene products", "plastic folders", "foil-lined packaging",
     "ink cartridges", "construction waste"],
     "icon": "/images/energy.svg",
-    "style": "dark"
-    
+    "description": "Energy waste is separately collected waste, which cannot be recycled as material but which can be recovered for reuse in energy production. Plastic waste generated in households is an example of this type of waste.",
+    "rules": ["Energy waste cannot contain any electronics, chemical compounds or hazardous waste", "Some type of plastic cannot be put into energy waste, check it before throwing away", "Packaging must be rinsed and dried"]
 },
 {
     "title": "Mixed",
@@ -55,8 +58,8 @@
          "igarette ends", "aluminium-coated plastic"],
     "no": ["any waste that can be specified under particular category"],
     "icon":"/images/mixed.svg",
-    "style": "light"
-    
+    "description": "Mixed waste is generally taken to a dump. However, not all mixed waste will end up at a dump as some of it can be incinerated. The heat produced by incineration can be used for example in district heating systems. Incineration gases are purified and metals are separated from the ashes. The remaining ashes may be used in earthwork and landfilling. Mixed waste consists of non-recyclable materials, such as soiled papers, cardboards and plastic packaging.",
+    "rules":["Problem waste cannot be just put into mixed waste", "Do not put everything that can be segregated properly, into mixed waste", "Remember that hazardous waste does not belong here"]
 },
 {
     "title": "Hazardous",
@@ -64,7 +67,8 @@
      "pesticides", "strong acids" ],
     "no": ["any waste that can be specified under particular category"],
     "icon":"/images/hazard.svg",
-    "style": "dark"
+    "description": "Hazardous waste is a substance or object that poses substantial threat or harm to health or environment. For that reason, it is important to bring it in the special points, where it can be collected.",
+    "rules":["Hazardous waste should be collected at the specially dedicated location.", "Read the packaging carefully to know if it can harm your health or environment", "Do not heziate to find collection point and call them to clarify what waste can be brought", "Do not keep hazardous waste at home, especially in the kitchen"]
     
 },
 {
@@ -73,7 +77,7 @@
      "sensors" ],
     "no": ["electric wires", "cables", "combustion engines", "halogen bulbs"],
     "icon":"/images/plug.svg",
-    "style": "light"
-    
+    "description": "Electronical waste includes televisions, monitors, refrigerators, telecommunication devices as well as electronic devices with built-in batteries. You can take any kind of electrical waste to Sortti facilities. Working or fixable equipment is collected and sent on for reuse. The rest of the waste is sorted to separate different metals, plastics and glass. During pre-processing, hazardous elements such as lead, mercury and cadmium are removed. These are sent to a hazardous waste disposal plant. One way to reuse metal is as shielding material in mobile phones. Metal can also be returned to its original form and reused as such. ",
+    "rules": ["Electronical waste must always be taken to collection points", "Do not include removable batteries or light bulbs with electrical waste", "Electronic  waste should not be put together with mixed waste", "Do not leave electronic waste in your property"]
 }
 ]}
