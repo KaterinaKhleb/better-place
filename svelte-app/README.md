@@ -16,36 +16,9 @@ npm run dev
 
 Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
 
+## About the project
 
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+A static website is aimed to provide the basic knowledge about waste segragation in Finland. The information you can see on the website
+is collected from the following sources: https://rinkiin.fi/for-households/sorting-instructions/, https://www.hoas.fi/en/tenants/property-maintenance/jatehuolto-ja-kierratys/sorting-waste/,
+https://www.hanken.fi/en/about-hanken.
+A Javascript framework used: Svelte https://svelte.technology/
